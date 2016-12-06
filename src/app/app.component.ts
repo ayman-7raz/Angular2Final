@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 //  title = '';
-name =  'Ray';
+name =  'Ayman';
 artists = ['Barot Bellingham', 'Jonathan Ferrar', 'Hillary Post'];
 
-onClick(myName) {
+onClick(myName, myElement) {
   this.name=myName;
+  myElement.style.backgroundColor="#FECE4E";
 }
+
 
 addArtist(myArtist) {
   this.artists.push(myArtist);
